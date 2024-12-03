@@ -2,19 +2,19 @@
  * Experiment 4: Proximities - Pong Edition
  * WENJIA QUAN
  * for Creation and Computation OCADU 2024
- * Use Ultrasonic Distance Sensor to detect the pull of accordion pull, when pull accordion, control paddle down; when push accordion, control paddle up.
+ * Use an Ultrasonic Distance Sensor to detect the pull and push of the accordion, when pulling the accordion, control the paddle down; when pushing the accordion, control the paddle up.
  * 
  * Real-time distance and motion tracking system using rolling average smoothing.
  * Calculates instantaneous motion and accumulates total movement distance.
  * 
  * Key Control Variables:
  * readInterval    = 30ms   - Main processing/output interval
- * AVERAGE_WINDOW  = 5      - Number of samples in rolling average
+ * AVERAGE_WINDOW  = 5      - Number of samples in the rolling average
  * MOTION_THRESHOLD = 0.3cm - Minimum change to register as movement
  * 
  * Output Format:
  * Raw Distance (cm) | Smoothed Distance (cm) | Current Motion (cm) | 
- * Motion State (TOWARD/AWAY/STILL) | Total Motion (cm)
+ * Total Motion (cm)
  * 
  * Hardware Setup:
  * TRIGGER_PIN = 2
